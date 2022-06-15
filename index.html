@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.typekit.net/igq1smf.css">
+<link rel="stylesheet" href="style.css">
+<!-- CSS only -->
+
+<title>IT Help Desk</title>
+</head>
+<!--
+IMPORTANT: Things to keep in mind if you ever want to restyle anything: 
+1. Keep the ID and CLASS stuff in - if deleted or replaced make sure to also delete or replace in the style.css page - that way the CSS will transfer over 
+      1a. There is also javascript code in here, which calls the class and id names I set, so if replaced, please watch out for that 
+-->
+
+<body>
+
+
+<!--  Start of the Navigation Bar Creation  -->
+<!--////////////////////////////////////////////////////////////////////////////////////-->
+<div class="navigation" id="responsivenav">
+
+
+  <!-- Start of Contact Tab in Nav Bar -->     
+  <ul> 
+    <li class="arrow"><a href="" >Contact
+      <img src="\Helpdesk\HelpDeskImages\Nav_downarrow_black.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
+      <img src="\Helpdesk\HelpDeskImages\Navigation_uparrow_red.png" alt="up arrow" class="imghover"> 
+    </a>
+        <ul>
+            <li class="dropdown-content"></li> <!-- Start of the dropdown items under each tab-->
+            <li><a href="mailto:helpdesk@emconsultinginc.com"><h4>Kody Jordan</h4><p>IT Support Specialist <br><br> 800.572.0011 x169 <br> helpdesk@emconsultinginc.com</p></a></li> <!-- To add another list item, copy and paste whole row-->
+
+        </ul>
+      </li>
+  </ul>
+  <!-- End of Contact Tab in Nav Bar -->     
+
+<!--////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Start of Resources Tab in Nav Bar -->     
+  <ul>
+      <li class="arrow"><a href="" >Resources 
+        <img src="\Helpdesk\HelpDeskImages\Nav_downarrow_black.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
+        <img src="\Helpdesk\HelpDeskImages\Navigation_uparrow_red.png" alt="up arrow" class="imghover"> 
+      </a>
+          <ul> 
+              <li class="dropdown-content"></li>
+              <li><a href="hrticket.html">Human Resources</a></li>
+              <li><a href="https://www.lastpass.com/features/password-generator">Password Generator</a></li> <!-- To change or update links replace the href path-->
+              <li><a href="#">Link 3</a></li>
+          </ul>
+      </li>
+    </ul>
+<!-- End of Resources Tab in Nav Bar -->    
+
+<!--////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Start of Knowledge Base Tab in Nav Bar -->    
+    <ul>
+      <li class="arrow"><a href="" >Knowledge Base
+        <img src="\Helpdesk\HelpDeskImages\Nav_downarrow_black.png" alt="down arrow" class="imgnothover"> <!-- This line and line 27 are for the arrow animations, so if you ever want the image for the arrows changed, all you need to replace is the SRC path-->
+        <img src="\Helpdesk\HelpDeskImages\Navigation_uparrow_red.png" alt="up arrow" class="imghover"> 
+      </a>
+          <ul>
+              <li class="dropdown-content"></li>
+              <li><a href="">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+          </ul>
+      </li>
+<!-- End of Knowledge Base Tab in Nav Bar -->  
+
+<!--////////////////////////////////////////////////////////////////////////////////////-->
+
+
+            
+          </ul>  
+
+
+
+          <h3><a  class="eandmlogo" href="https://reserveyourad.com/Helpdesk/">  <img class="" src="\Helpdesk\HelpDeskImages\eandmlogo.png" class="responsive" alt="E&M Logo" style="vertical-align: middle; width: 40px; height: 40px; margin-right: 15px; top: -5px; position: inherit;" href="https://reserveyourad.com/Helpdesk/"> E&M Consulting, Inc.</a> </h3>
+
+            
+        </ul>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>   
+
+
+
+        </div>
+
+
+
+
+
+
+<!--This is start of Javascript code to make the Navbar Responsive-->
+          <script>
+            function myFunction() {
+              var x = document.getElementById("responsivenav"); // This line is calling the id I set for the navbar // 
+              if (x.className === "navigation") { // This line tells the navbar to be responsive //
+                x.className += " responsive"; // The space before this is required - honeslty not sure why //
+              } else {
+                x.className = "navigation"; // This is the end of the if statement that allows the navbar to go back to its original state//
+              }
+            }
+            </script>
+<!--This is end of Javascript code to make the Navbar Responsive-->
+
+<!--////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Start of Content Section-->
+
+<div class="row">
+<div class="column">
+
+<img src="/Helpdesk/HelpDeskImages/techgusty.png" class="responsive" alt="Tech goose image">
+
+</div>
+
+
+<div class="column">
+
+<!--  ----------------------------------------------------------------------  --> 
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: Please add the following <FORM> element to your page.             -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <form  id="itform" action="\confirmation.html" method="POST" autocomplete="off">
+  
+  <input type=hidden name="orgid" value="00D5w000003Ul2j">
+  <input type=hidden name="retURL" value="Helpdesk\confirmation.html">
+  
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail" value="tom@eandmsales.com">      -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text"/><br>
+  
+  <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Support Ticket"/><br><br>
+  
+  Department:
+  <select  id="00N5w00000S1maj" name="00N5w00000S1maj" title="Department"><option value="">--None--</option><option value="Association Team">Association Team</option>
+  <option value="Graphics">Graphics</option>
+  <option value="Sales">Sales</option>
+  <option value="Management">Management</option>
+  <option value="Accounting">Accounting</option>
+  </select><br><br>
+  
+  Issue with:
+  <select  id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with"><option value="">--None--</option><option value="Computer">Computer</option>
+  <option value="Peripherals (Mouse, Keyboard, Monitor, etc.)">Peripherals (Mouse, Keyboard, Monitor, etc.)</option>
+  <option value="Software">Software</option>
+  <option value="Network (Internet Access, Server Access, etc.)">Network (Internet Access, Server Access, etc.)</option>
+  <option value="Phone">Phone</option>
+  <option value="Other">Other</option>
+  </select><br>
+  
+  <label for="description">Description</label><textarea style="height: 300px; font-weight: lighter;"name="description"></textarea><br>
+  
+  <input type="submit" name="submit">
+  
+  </form>
+  
+
+</div>
+
+<footer style="background-color: #292929; text-align: left; padding: 25px; color:#ffffff; width: 100%; height: 100%; display: table; clear: both; ">
+
+     <!-- Keep this section - if more people, add to LP, will show up in footer -->
+  <div class="footcolumn">
+     <!-- <h1>Contact:</h1> <br> -->
+<!-- 
+     <div class="footcolumn" style="width:fit-content">
+      <p><a href="mailto:helpdesk@emconsultinginc.com"><h4>Kody Jordan</h4><p>IT Support Specialist <br><br> 800.572.0011 x169 <br> helpdesk@emconsultinginc.com</a></p>
+    </div>
+    <div class="footcolumn" style="width:fit-content">
+    <p><a href="mailto:sabrina@emconsultinginc.com"><h4>Sabrina Thong</h4><p>Administrative Assistant <br><br> 800.572.0011 x144 <br> sabrina@emconsultinginc.com</a></p>
+  </div> -->
+
+</div>
+
+  <div>
+
+
+<p> 
+ <hr> 
+</p>
+
+  
+    <div class="footcolumn" style="width: 48%;">
+      E&M ALL RIGHTS RESERVED
+    </div>
+    
+    <div class="footcolumn" style="width: 30%;">
+      <img class="" src="/Helpdesk/HelpDeskImages/whiteeandmlogo.png" class="responsive" alt="E&M Logo" style="vertical-align: middle; width: 40px; height: 40px;">
+      </div>
+
+      <div class="footcolumn" style="width: 10%;">
+        <a href="\Helpdesk\privacy policy.html">Privacy Policy</a>
+      </div>
+    
+    <div class="footcolumn" style="width: 10%;">
+      <a href="https://emconsultinginc.com/EandM.Consulting/img/Terms%20of%20Use//User%20Terms%20of%20Use_2018.pdf">Terms of Use</a>
+    </div>
+
+  </div>
+    
+
+
+</footer>
+
+
+
+</body>
+
+
+</html>
