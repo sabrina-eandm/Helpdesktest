@@ -129,7 +129,7 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
 </div>
 
-
+<div class="column">
 <!-- ---------------------------------------------------------------------- -->
 <!-- NOTE: Please add the following <META> element to your page <HEAD>. -->
 <!-- If necessary, please modify the charset parameter to specify the -->
@@ -150,10 +150,6 @@ function timestamp() { var response = document.getElementById("g-recaptcha-respo
 <!-- NOTE: Please add the following <FORM> element to your page. -->
 <!-- ---------------------------------------------------------------------- -->
 
-
-<div class="column">
-
-
 <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
 <input type=hidden name='captcha_settings' value='{"keyname":"Google","fallback":"true","orgId":"00D5w000003Ul2j","ts":""}'>
@@ -173,7 +169,7 @@ function timestamp() { var response = document.getElementById("g-recaptcha-respo
 
 <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br><br>
 
-
+<label for="subject">Subject</label><input id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
 Department:<select id="00N5w00000S1maj" name="00N5w00000S1maj" title="Department"><option value="">--None--</option><option value="Association Team">Association Team</option>
 <option value="Graphics">Graphics</option>
@@ -181,10 +177,6 @@ Department:<select id="00N5w00000S1maj" name="00N5w00000S1maj" title="Department
 <option value="Management">Management</option>
 <option value="Accounting">Accounting</option>
 </select><br>
-
-
-
-<label for="subject">Subject</label><input id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
 
 
