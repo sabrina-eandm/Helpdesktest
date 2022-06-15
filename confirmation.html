@@ -91,7 +91,7 @@
 
 <p>YEAH!! Ticket Submitted!</p>
 
-<button href="https://helpdesk.emconsultinginc.com/">
+<button class="submit-btn" href="https://helpdesk.emconsultinginc.com/">
     Back to Homepage
 </button>
 
@@ -188,46 +188,18 @@ body {
 
 /* Create two equal columns that floats next to each other */
 .column {
-width: 45%;
-padding: 100px;
-
+width: 100%;
+padding: 35px;
+text-align: center;
 }
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
 content: "";
 display: table;
 clear: both;
-}
+} */
 
-
-
-input[type=text], select, textarea {
-width: 100%;
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 4px;
-resize: vertical;
-}
-
-label {
-padding: 12px 12px 12px 0;
-display: inline-block;
-}
-
-input[type=submit] {
-background-color: #FA5540;
-color: white;
-padding: 12px 20px;
-border: none;
-border-radius: 10px;
-cursor: pointer;
-float: right;
-}
-
-input[type=submit]:hover {
-background-color: #FA5540;
-}
 
 .container {
 border-radius: 5px;
@@ -288,26 +260,6 @@ padding: 20px;
     position: relative;
     box-shadow: 0 0 20px 9pn #ff61241f;
     border-radius: 30px;
-}
-
-.input-group {
-    top: 180px;
-    width: 280px;
-    transition: .5s;
-    position: initial;
-    padding-bottom: 200px;
-}
-
-.input-field{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
 }
 
 .submit-btn {
