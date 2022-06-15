@@ -118,88 +118,88 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
 
 
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc0cG8gAAAAACbt3ZNMG80g18b6iHX0jzcrvGy7"></script>
 
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <META> element to your page <HEAD>. -->
+<!-- If necessary, please modify the charset parameter to specify the -->
+<!-- character set of your HTML page. -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
-
-grecaptcha.enterprise.ready(function() {
-
-grecaptcha.enterprise.execute('6Lc0cG8gAAAAACbt3ZNMG80g18b6iHX0jzcrvGy7', {action: 'login'}).then(function(token) {
-
-...
-
-});
-
-});
-
+function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
 </script>
 
 
 
-<!--////////////////////////////////////////////////////////////////////////////////////-->
-
-<!-- Start of Content Section-->
-
-<div class="row">
-<div class="column">
-
-<img src="/Helpdesk/HelpDeskImages/techgusty.png" class="responsive" alt="Tech goose image">
-
-</div>
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <FORM> element to your page. -->
+<!-- ---------------------------------------------------------------------- -->
 
 
-<div class="column">
 
-<!--  ----------------------------------------------------------------------  --> 
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-  <!--  ----------------------------------------------------------------------  -->
-  <!--  NOTE: Please add the following <FORM> element to your page.             -->
-  <!--  ----------------------------------------------------------------------  -->
-  
-  <form  id="itform" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" autocomplete="off">
-  
-  <input type=hidden name="orgid" value="00D5w000003Ul2j">
-  <input type=hidden name="retURL" value="https://www.emconsultinginc.com">
-  
-  <!--  ----------------------------------------------------------------------  -->
-  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-  <!--  these lines if you wish to test in debug mode.                          -->
-  <!--  <input type="hidden" name="debug" value=1>                              -->
-  <!--  <input type="hidden" name="debugEmail" value="tom@eandmsales.com">      -->
-  <!--  ----------------------------------------------------------------------  -->
-  
-  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text"/><br>
-  
-  <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Support Ticket"/><br><br>
-  
-  Department:
-  <select  id="00N5w00000S1maj" name="00N5w00000S1maj" title="Department"><option value="">--None--</option><option value="Association Team">Association Team</option>
-  <option value="Graphics">Graphics</option>
-  <option value="Sales">Sales</option>
-  <option value="Management">Management</option>
-  <option value="Accounting">Accounting</option>
-  </select><br><br>
-  
-  Issue with:
-  <select  id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with"><option value="">--None--</option><option value="Computer">Computer</option>
-  <option value="Peripherals (Mouse, Keyboard, Monitor, etc.)">Peripherals (Mouse, Keyboard, Monitor, etc.)</option>
-  <option value="Software">Software</option>
-  <option value="Network (Internet Access, Server Access, etc.)">Network (Internet Access, Server Access, etc.)</option>
-  <option value="Phone">Phone</option>
-  <option value="Other">Other</option>
-  </select><br>
-  
-  <label for="description">Description</label><textarea style="height: 300px; font-weight: lighter;"name="description"></textarea><br>
-  
-  <input type="submit" name="submit">
-  
-  </form>
+
+<input type=hidden name='captcha_settings' value='{"keyname":"Google","fallback":"true","orgId":"00D5w000003Ul2j","ts":""}'>
+<input type=hidden name="orgid" value="00D5w000003Ul2j">
+<input type=hidden name="retURL" value="helpdesk/confirmation.html">
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: These fields are optional debugging elements. Please uncomment -->
+<!-- these lines if you wish to test in debug mode. -->
+<!-- <input type="hidden" name="debug" value=1> -->
+<!-- <input type="hidden" name="debugEmail" value="kody@eandmsales.com"> -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+
+
+Department:<select id="00N5w00000S1maj" name="00N5w00000S1maj" title="Department"><option value="">--None--</option><option value="Association Team">Association Team</option>
+<option value="Graphics">Graphics</option>
+<option value="Sales">Sales</option>
+<option value="Management">Management</option>
+<option value="Accounting">Accounting</option>
+</select><br>
+
+
+
+<label for="subject">Subject</label><input id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+
+
+Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with"><option value="">--None--</option><option value="Computer">Computer</option>
+<option value="Peripherals (Mouse, Keyboard, Monitor, etc.)">Peripherals (Mouse, Keyboard, Monitor, etc.)</option>
+<option value="Software">Software</option>
+<option value="Network (Internet Access, Server Access, etc.)">Network (Internet Access, Server Access, etc.)</option>
+<option value="Phone">Phone</option>
+<option value="Other">Other</option>
+</select><br>
+
+
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+
+
+<div class="g-recaptcha" data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_"></div><br>
+<input type="submit" name="submit">
+
+
+
+</form>
   
 
 </div>
