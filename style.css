@@ -382,4 +382,10 @@ ul:hover ul {
   text-align: left;
   padding:20px;
   font-size: medium;
-}      
+}   
+
+
+.logo {
+    align: left;
+    width: 200px;
+}
