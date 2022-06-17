@@ -23,8 +23,7 @@
         <ul>
             <li class="dropdown-content"></li>
             <li><a href="mailto:helpdesk@emconsultinginc.com"><h4>Kody Jordan</h4><p>IT Support Specialist <br><br> 800.572.0011 x169 <br> helpdesk@emconsultinginc.com</p></a></li>
-            <li><a href="mailto:sabrina@emconsultinginc.com"><h4>Sabrina Thong</h4><p>Administrative Assistant <br><br> 800.572.0011 x144 <br> sabrina@emconsultinginc.com</p></a></li>
-            <li><a href="#">Link 3</a></li>
+
         </ul>
       </li>
   </ul>
@@ -38,11 +37,11 @@
               <li class="dropdown-content"></li>
               <li><a href="hr.html">Human Resources</a></li>
               <li><a href="https://www.lastpass.com/features/password-generator">Password Generator</a></li>
-              <li><a href="#">Link 3</a></li>
+<!--               <li><a href="#">Link 3</a></li> -->
           </ul>
       </li>
     </ul>
-
+<!-- 
     <ul>
       <li class="arrow"><a href="" >Knowledge Base
         <img src="\Helpdesk\HelpDeskImages\Nav_downarrow_black.png" alt="down arrow" class="imgnothover">
@@ -54,10 +53,10 @@
               <li><a href="#">Link 2</a></li>
               <li><a href="#">Link 3</a></li>
           </ul>
-      </li>
+      </li> -->
 
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </ul>
+<!--     </ul> -->
     <a  class="eandmlogo" href="https://reserveyourad.com/Helpdesk/">  <img class="" src="/HelpDeskImages/eandmlogo.png" class="responsive" alt="E&M Logo" style="vertical-align: middle; width: 40px; height: 40px;" href="https://reserveyourad.com/Helpdesk/"> E&M Consulting, Inc</a>
 
 
@@ -95,7 +94,86 @@
   function check(form) { /*function to check userid & password*/
       /*the following code checkes whether the entered userid and password are matching*/
       if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
-          window.open('https://emconsultinginc.com/')/*opens the target page while Id & password matches*/
+        
+          
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <META> element to your page <HEAD>. -->
+<!-- If necessary, please modify the charset parameter to specify the -->
+<!-- character set of your HTML page. -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+</script>
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: Please add the following <FORM> element to your page. -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+
+
+<input type=hidden name='captcha_settings' value='{"keyname":"Google","fallback":"true","orgId":"00D5w000003Ul2j","ts":""}'>
+<input type=hidden name="orgid" value="00D5w000003Ul2j">
+<input type=hidden name="retURL" value="helpdesk/confirmation.html">
+
+
+
+<!-- ---------------------------------------------------------------------- -->
+<!-- NOTE: These fields are optional debugging elements. Please uncomment -->
+<!-- these lines if you wish to test in debug mode. -->
+<!-- <input type="hidden" name="debug" value=1> -->
+<!-- <input type="hidden" name="debugEmail" value="kody@eandmsales.com"> -->
+<!-- ---------------------------------------------------------------------- -->
+
+
+
+<label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+
+
+Department:<select id="00N5w00000S1maj" name="00N5w00000S1maj" title="Department"><option value="">--None--</option><option value="Association Team">Association Team</option>
+<option value="Graphics">Graphics</option>
+<option value="Sales">Sales</option>
+<option value="Management">Management</option>
+<option value="Accounting">Accounting</option>
+</select><br>
+
+
+
+<label for="subject">Subject</label><input id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+
+
+Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with"><option value="">--None--</option><option value="Computer">Computer</option>
+<option value="Peripherals (Mouse, Keyboard, Monitor, etc.)">Peripherals (Mouse, Keyboard, Monitor, etc.)</option>
+<option value="Software">Software</option>
+<option value="Network (Internet Access, Server Access, etc.)">Network (Internet Access, Server Access, etc.)</option>
+<option value="Phone">Phone</option>
+<option value="Other">Other</option>
+</select><br>
+
+
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+
+
+<div class="g-recaptcha" data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_"></div><br>
+<input type="submit" name="submit">
+
+
+
+</form>
 
       }
     
