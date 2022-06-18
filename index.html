@@ -161,11 +161,6 @@ function timestamp() { var response = document.getElementById("g-recaptcha-respo
 
 <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" autocomplete="off">
 
-       <div
-        class="g-recaptcha"
-        data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_"
-        data-callback="callback"
-      ></div>
 <input type=hidden name='captcha_settings' value='{"keyname":"Google","fallback":"true","orgId":"00D5w000003Ul2j","ts":""}'>
 <input type=hidden name="orgid" value="00D5w000003Ul2j">
 <input type=hidden name="retURL" value="https://helpdesk.emconsultinginc.com/confirmation.html">
@@ -208,8 +203,8 @@ Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with
 
 
 
-<div class="g-recaptcha" data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_"></div><br>
-<input id="submit-button" type="submit" name="submit">
+<div class="g-recaptcha" data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_" data-callback="callback"></div><br>
+<input id="submit-button" type="submit" disabled name="submit">
 
       
 
@@ -217,6 +212,13 @@ Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with
 
  <!-- END OF FORM CODE (CAN BE REMOVED UP FROM HERE) -->  
 
+  <script type="txt/javascript">
+  function callback() {
+  const sumbitButton = document.getElementById("submit-button");
+  submitButton.removeAttrubut("disabled");
+  }
+  
+  </script>
 </div>
 
 <footer style="background-color: #292929; text-align: left; padding: 25px; color:#ffffff; width: 100%; height: 100%; display: table; clear: both; ">
