@@ -82,6 +82,7 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
 <!--////////////////////////////////////////////////////////////////////////////////////-->
 
+      <!--Code for logo and company name div in top left corner of website -->
 <div class="logo">
           <h3><a  class="eandmlogo" href="https://helpdesk.emconsultinginc.com/">  <img class="" src="\Helpdesk\HelpDeskImages\eandmlogo.png" class="responsive" alt="E&M Logo" style="vertical-align: middle; width: 40px; height: 40px; margin-right: 15px; top: -5px; position: inherit;" href="https://helpdesk.emconsultinginc.com/"> E&M Consulting, Inc.</a> </h3>
       </div>
@@ -92,6 +93,8 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
             
         </ul>
+      
+      <!-- This is used to link javascript code with the nav bar -->
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>   
 
 
@@ -127,6 +130,8 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 </div>
 
 <div class="column">
+
+<!-- START OF FORM CODE (CAN BE REMOVED FROM HERE) -->      
 <!-- ---------------------------------------------------------------------- -->
 <!-- NOTE: Please add the following <META> element to your page <HEAD>. -->
 <!-- If necessary, please modify the charset parameter to specify the -->
@@ -137,10 +142,17 @@ IMPORTANT: Things to keep in mind if you ever want to restyle anything:
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
-</script>
-
+<!-- <script>
+function timestamp() { var response = document.getElementById("g-recaptcha-response"); 
+                      if (response == null || response.value.trim() == "") 
+                      {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+</script> -->
+    <script type="text/javascript">
+      function callback() {
+        const submitButton = document.getElementById("submit-button");
+        submitButton.removeAttribute("disabled");
+      }
+    </script>
 
 
 <!-- ---------------------------------------------------------------------- -->
@@ -192,12 +204,13 @@ Issue with:<select id="00N5w00000S1mao" name="00N5w00000S1mao" title="Issue with
 
 
 <div class="g-recaptcha" data-sitekey="6LeU1XIgAAAAAHHe_6uxR6_kP_oIt0UNjMFVztv_"></div><br>
-<input type="submit" name="submit">
+<input id="submit-button" type="submit" disabled name="submit">
 
       
 
 </form>
-  
+
+ <!-- END OF FORM CODE (CAN BE REMOVED UP FROM HERE) -->  
 
 </div>
 
