@@ -128,12 +128,12 @@ padding: 20px;
 }
 
 
-
 .confirm {
 width: 100%;
 height: auto;
 padding: 20px;
 }
+
 
 *{
     margin: 0;
@@ -180,7 +180,6 @@ padding: 20px;
     border: 0;
     outline: none;
     border-radius: 40px;
-    align: center;
 }  
 
 .check-box {
@@ -324,7 +323,7 @@ ul a {
 
 }
 
-
+/* This will style the white line running throught the footer  */
 hr {
   width: 100%;
 }
