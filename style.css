@@ -116,23 +116,19 @@ border-radius: 5px;
       color: #f8f9fa;
   }
 
+/* This is code that says to underline the text only when user hovers over  */
   a:hover {
       text-decoration: underline;
   }
 
 
+/* This is styling for Tech Gusty Image */
 .responsive {
 width: 100%;
 height: auto;
 padding: 20px;
 }
 
-
-.confirm {
-width: 100%;
-height: auto;
-padding: 20px;
-}
 
 
 *{
